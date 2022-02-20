@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class gamemanager : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class gamemanager : MonoBehaviour
         if(st <= 0){
             Spown();
             st = SpownTime;
+        }
+        if(movement.life == 0)
+        {
+            SceneManager.LoadScene(2);
         }
     }
     public void Spown(){
