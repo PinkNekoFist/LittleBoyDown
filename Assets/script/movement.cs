@@ -6,7 +6,7 @@ public class movement : MonoBehaviour
 {   private Rigidbody2D rb;
     public float speed;
     [SerializeField]
-    private int life = 3;
+    public static int life = 3;
     // Start is called before the first frame update
     void Start()
     {
