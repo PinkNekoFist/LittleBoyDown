@@ -25,9 +25,10 @@ public class gamemanager : MonoBehaviour
         if(movement.life == 0)
         {
             SceneManager.LoadScene(2);
+            movement.life = 3;
         }
     }
     public void Spown(){
-        Instantiate(floor[Random.Range(0,3)],new Vector2(Random.Range(-3f,3f),transform.position.y),Quaternion.identity);
+        Instantiate(floor[Random.Range(0,3)],new Vector2(Random.Range(-8f,8f),transform.position.y),Quaternion.identity);
     } 
 }
